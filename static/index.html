@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<title>Police Misconducts</title>
+		<script src="/socket.io/socket.io.min.js"></script>
+	</head>
+	<body>
+		<fullpage id="main">
+			<h1 style="color:white;font-size:10vh;transition:0.5s;" class="centered nospace">Police Misconducts</h1>
+			<div showing="false" id="menu" style="position:absolute;top: calc(20px + 4em);left:20px;color:white;transition:0.5s;">
+				<h1 id="name"></h1>
+				<i id="CRID">CRID: 12345</i>
+				<br>
+				<i id="actiontaken"></i>
+			</div>
+			<i style="color:white;top:63vh;left:50%;transform:translate(-50%,0);position:absolute;animation: flashing infinite 2s linear;" id="clickanywhere"><h2 class="nospace">Click Anywhere</h2></i>
+		</fullpage>
+		<div id="allcontent">
+			<fullpage style="overflow:hidden;">
+				<center id="numberofcrimes" class="centered">
+					<div class="centered">
+						<h1 id="crimecounter" style="font-size:75px;" class="nospace">42,069</h1>
+						<h2>Recorded Police Misconducts in 2015</h2>
+					</div>
+				</center>
+				<img src="https://cdn1.sph.harvard.edu/wp-content/uploads/sites/2464/2020/05/spenser-IxooIwnNjCA-unsplash-scaled.jpg" id="crimecounterbg">
+				<div class="vignette"></div>
+			</fullpage>
+			<div id="footer" style="display:none;opacity:0;transition:0.5s;">
+				<center>
+					<h1>Created by Kenji W. and Paulene G.</h1>
+					<a href="sheet.xlsx" download>ree</a>
+				</center>
+				<hr>
+				<div style="padding:20px;">
+					<h1 style="margin:20px;">Contact Info</h1>
+					<p style="margin:20px;">Kenji: kenjiw360@gmail.com</p>
+					<p style="margin:20px;">Paulene: paulenegueco@hotmail.com</p>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="script.js" defer></script>
+	</body>
+</html>
